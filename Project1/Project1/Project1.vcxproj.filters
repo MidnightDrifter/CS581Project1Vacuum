@@ -23,29 +23,29 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="1.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="2.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="3.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="4.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="5.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="6.txt">
-      <Filter>Source Files</Filter>
+    <Text Include="handout.txt">
+      <Filter>Resource Files</Filter>
     </Text>
     <Text Include="9.txt">
-      <Filter>Source Files</Filter>
+      <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="handout.txt">
-      <Filter>Source Files</Filter>
+    <Text Include="6.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="5.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="4.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="2.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="3.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="1.txt">
+      <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
