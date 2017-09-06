@@ -125,11 +125,13 @@
     <Text Include="handout.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="agent.cpp" />
     <ClCompile Include="agent.skeleton.cpp" />
     <ClCompile Include="driver.cpp" />
     <ClCompile Include="environment.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="agent.h" />
     <ClInclude Include="agent.skeleton.h" />
     <ClInclude Include="definitions.h" />
     <ClInclude Include="environment.h" />
