@@ -10,6 +10,7 @@ class Agent {
 
 	//Depth first search:  Iterative Depth DFS
 	//Breadth first search:  just regular BFS
+	int dirtSucked;
 
 };
 

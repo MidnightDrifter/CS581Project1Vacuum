@@ -25,7 +25,7 @@ struct BoardState;
 struct BoardState;
 
 
-Agent::Agent(int random_seed) { 
+Agent::Agent(int random_seed) : dirtSucked(0) { 
   //supplying your own seed may help debugging, same seed will cause 
   //same random number sequence 
   if (random_seed==0) std::srand( static_cast<unsigned>(std::time(0))); // random seed from time
@@ -61,9 +61,11 @@ Agent::Agent(int random_seed) {
 
 Action Agent::GetAction(Percept p) {
   //straight-forward beahavior
-  if (p.dirt) return SUCK;
-  if (p.bump) return (std::rand() % 5 < 3) ? LEFT : RIGHT; // P(LEFT) = 3/5
-  if (p.home) return (std::rand() % 2) ? SHUTOFF : FORWARD;
+	if (p.dirt) {
+		dirtSucked++; return SUCK;
+	}
+	if (p.bump) { return (std::rand() % 5 < 3) ? LEFT : RIGHT; } // P(LEFT) = 3/5
+  if (p.home && dirtSucked>0) { return  SHUTOFF; }
   //default rule
   return (std::rand() % 5 < 3) ? 
                FORWARD :
