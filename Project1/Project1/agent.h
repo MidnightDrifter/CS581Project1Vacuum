@@ -1,6 +1,7 @@
 #ifndef AGENT_H
 #define AGENT_H
 #include "definitions.h"
+#include <vector>
 enum class Direction
 {
 	NORTH,
@@ -8,6 +9,7 @@ enum class Direction
 	EAST,
 	WEST
 };
+
 class Node
 {
 public:
@@ -24,6 +26,7 @@ public:
 
 
 };
+
 
 class NodeGraph
 {
